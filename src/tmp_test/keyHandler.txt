@@ -1,0 +1,30 @@
+    // На перспективу - keys handler
+    // const textKeysHandler = (e, sectionId, sectionIndex) => {
+    //     if(e.key === 'Enter'){
+    //         e.preventDefault()
+    //         setSections(prevState => {
+    //             //Определяем, в какой секции нажимается Enter
+    //             const changedSection = prevState.find(item => item.id === sectionId)
+    //             //В новую перемещяем то, что стояло после курсора
+    //             const newBody = changedSection.body.substring(e.target.selectionStart)
+    //             const newSection = {id: Math.random().toString(36).substr(2,9), type: 'text', body: newBody}
+    //             //Оставляем в ней то, что стояло до курсора
+    //             changedSection.body = changedSection.body.substring(0, e.target.selectionStart)
+    //             //Создаем новый Array для корректировки
+    //             const newSections = Array.from(prevState)
+    //             //Убираем старую секцию
+    //             newSections.splice(sectionIndex, 1)
+    //             //Добавляем новую секцию
+    //             newSections.splice(sectionIndex, 0, changedSection)
+    //             newSections.splice(sectionIndex + 1, 0, newSection)
+    //             //Назначаем значение
+    //             return newSections
+    //         })
+    //     } else if(e.key === 'Backspace' && e.target.selectionStart === 0){
+    //         e.preventDefault()
+    //         setSections(prevState => {
+    //             const udpatedSections = prevState.filter(item => item.id !== sectionId)
+    //             setSections(udpatedSections)
+    //         })
+    //     }
+    // }

@@ -1,0 +1,6 @@
+Перечень неободимых API:
+
+
+Запуск сервера:
+npx json-server --watch src/tmp_test/db.json --port 3004
+
